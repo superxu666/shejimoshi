@@ -9,7 +9,7 @@ var Student = function (result) {
 Student.prototype = {
     constructor: Student,
     answer: function (question) {
-        Observer.regist(question, this.say);
+        Observer.register(question, this.say);
     },
     sleep: function (question) {
         Observer.remove(question, this.say);

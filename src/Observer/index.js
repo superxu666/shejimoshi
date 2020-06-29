@@ -26,7 +26,7 @@
         ui.appendChild(li);
     }
 
-    Observer.regist('addCommentMessage', addMsgItem);
+    Observer.register('addCommentMessage', addMsgItem);
 }());
 
 // 用户信息模块
@@ -37,8 +37,8 @@
         span.innerHTML = parseInt(span.innerHTML) + num;
     }
 
-    Observer.regist('addCommentMessage', changeMsgNum);
-    Observer.regist('removeCommentMessage', changeMsgNum);
+    Observer.register('addCommentMessage', changeMsgNum);
+    Observer.register('removeCommentMessage', changeMsgNum);
 }());
 
 // 提交模块

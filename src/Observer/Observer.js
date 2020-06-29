@@ -10,7 +10,7 @@ var Observer = (function () {
          * @param type 信息类型
          * @param fn 信息对应的动作
          */
-        regist: function (type, fn) {
+        register: function (type, fn) {
             if (typeof __messages[type] === 'undefined') {
                 __messages[type] = [fn];
             } else {
